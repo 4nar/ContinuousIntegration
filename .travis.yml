@@ -1,6 +1,9 @@
 language: python
 python:
     - "3.4"
-
+before_install:
+    - pip install codecov
 script:
     - py.test
+after_success
+    - codecov
