@@ -30,6 +30,10 @@ class Calc(object):
         elif symbol == '+':
             self.operations.append("+")
             self.add_number()
+        elif symbol == '-':
+            self.operations.append("-")
+            self.add_number()
+
         elif symbol == '=':
             self.add_number()
             while len(self.operations) > 0:
